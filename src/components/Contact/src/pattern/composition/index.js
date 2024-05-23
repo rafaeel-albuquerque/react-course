@@ -1,7 +1,11 @@
-import Form from "./contact-form.composition"
 import Title from "./contact-title.composition"
 
-export const Contact = {
-    Title: Title,
-    Form: Form
+export default function Title() {
+    return (
+        <div className="contact-title">
+            <Team.Section />
+            <Team.Content />
+            <Team.Main />
+        </div>
+    )
 }
