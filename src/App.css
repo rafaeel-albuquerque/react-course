@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 body {
@@ -12,24 +12,24 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: aqua;
-  gap: 40px;  
+  background-color: rgb(255, 255, 255);
+  gap: 40px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .card h1 {
-    font-size: 40px;
-    color: purple;
+  font-size: 40px;
+  color: purple;
 }
 
 .card p {
-    font-size: 25px;
-    color: blue;
+  font-size: 25px;
+  color: blue;
 }

@@ -1,0 +1,33 @@
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tag {
+  margin-top: 112pxgit ;
+  font-size: 30px;
+  color: black;
+  align-items: center;
+  gap: 26px;
+}
+
+.text {
+  margin-top: 24px;
+}
+
+.containerbutton {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.image {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 1312px;
+  height: 738px;
+}
