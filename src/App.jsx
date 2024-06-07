@@ -1,17 +1,24 @@
-import Headline from "./Styles/css-modules/components/Headline";
-import "./App.css"
-import Titulo from "./Styles/css-modules/components/Titulo";
-import Accordion from "./hooks/components/accordion"
+import Relume from "./src/svg/Relume.svg";
+import * as S from "./style";
 
-
-function App() {
+export default function DropdownMenu(props) {
   return (
-    <body>
-     <Accordion />
-    </body>
+    <S.Container>
+      {props.pages && props.pages > props.pages?.length == 0 ? (
+        props.pages.map((pages, key) => {
+          return (
+            <S.Content key={key}>
+              <S.Image src={Relume} />
+              <S.ContentText>
+                <S.Title>{pages.title}</S.Title>
+                <S.Description>{pages.description}</S.Description>
+              </S.ContentText>
+            </S.Content>
+          );
+        })
+      ) : (
+        <p>Coloque um Array!!</p>
+      )}
+    </S.Container>
   );
 }
-
-export default App;
-
-
