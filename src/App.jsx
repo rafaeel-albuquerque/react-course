@@ -1,24 +1,24 @@
-import Relume from "./src/svg/Relume.svg";
-import * as S from "./style";
+import React from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./hooks/components/Navbar";
+import TeamComposition from "./components/Team"
 
-export default function DropdownMenu(props) {
+function Home() {
   return (
-    <S.Container>
-      {props.pages && props.pages > props.pages?.length == 0 ? (
-        props.pages.map((pages, key) => {
-          return (
-            <S.Content key={key}>
-              <S.Image src={Relume} />
-              <S.ContentText>
-                <S.Title>{pages.title}</S.Title>
-                <S.Description>{pages.description}</S.Description>
-              </S.ContentText>
-            </S.Content>
-          );
-        })
-      ) : (
-        <p>Coloque um Array!!</p>
-      )}
-    </S.Container>
+    <Navbar />
+  )
+}
+
+function App() {
+  return (
+    <body>
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/teams" Component={TeamComposition} />
+      </Routes>
+    </body>
   );
 }
+
+export default App;
